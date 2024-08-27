@@ -38,6 +38,10 @@ def sobre_larxiu_digital():
 def contacte():
     return render_template('contacte')  # Servir el archivo HTML
 
+@app.route('/resultats')
+def resultats():
+    return render_template('resultats')  # Servir el archivo HTML
+
 def serialize_document(doc):
     if '_id' in doc:
         doc['_id'] = str(doc['_id'])
