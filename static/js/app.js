@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
             for (const key in filters) {
                 if (filters[key]) params.append(key, filters[key]);
             }
-            window.location.href = `templates/resultats.html?${params.toString()}`;
+            window.location.href = `{{ url_for('resultats') }}?${params.toString()}`;
 
             currentPage = 1;
         });
